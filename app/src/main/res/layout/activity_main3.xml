@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--ConstraintLayout : lebih fleksibel-->
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main3Activity">
+
+    <TextView
+        android:id="@+id/tv_haiUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hai, Username !"
+        android:textSize="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btn_back"
+        android:layout_width="315dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="232dp"
+        android:background="#F96060"
+        android:textColor="#fff"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_haiUsername"
+        android:text="BACK"/>
+
+
+</android.support.constraint.ConstraintLayout>

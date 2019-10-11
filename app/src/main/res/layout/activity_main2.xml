@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--RelativeLayout : mengikuti view yang lain-->
+<RelativeLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <!--TextView untuk menampilkan Biodata-->
+    <TextView
+        android:id="@+id/tv_biodata"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="30dp"
+        android:textSize="35dp"
+        android:text="Biodata" />
+    
+    <!--TextView untuk menampilkan nim-->
+    <TextView
+        android:id="@+id/tv_nim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_below="@+id/tv_biodata"
+        android:text="nim"/>
+    
+    <!--EditText untuk input nim-->
+    <EditText
+        android:id="@+id/edt_nim"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:layout_marginLeft="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/tv_nim"/>
+    
+    <!--TextView untuk menampilkan nama-->
+    <TextView
+        android:id="@+id/tv_nama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:textSize="25dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_below="@+id/edt_nim"
+        android:text="nama"/>
+    
+    <!--EditText untuk input nama-->
+    <EditText
+        android:id="@+id/edt_nama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/tv_nama"/>
+
+    <!--Button untuk menuju ke Activity3-->
+    <Button
+        android:id="@+id/btn_enter"
+        android:layout_width="315dp"
+        android:layout_height="wrap_content"
+        android:background="#F96060"
+        android:textColor="#FFF"
+        android:textSize="15dp"
+        android:layout_below="@+id/edt_nama"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="ENTER"/>
+
+</RelativeLayout>
